@@ -4,6 +4,7 @@
  */
 package testingApp;
 import static junit.framework.Assert.assertNotNull;
+import static junit.framework.Assert.assertSame;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -27,7 +28,16 @@ public class SoalTest extends TestCase{
      * nilai kembalian dari method pangkat sesuai hasil pemangkatan 
      * yang seharusnya
     */       
-    public void testNullPangkat(){                
+    public void testSamePangkat(){                
         assertSame("Harusnya",100,s.pangkat(10,2));
     }    
+    
+    /*
+     * test case 3: melakukan pengujian apakah 
+     * nilai kembalian dari method faktorial sesuai hasil faktorial
+     * yang seharusnya
+    */       
+    public void testNotSameFaktorial(){                
+        assertNotSame("Harusnya",6,s.faktorial(3));
+    }        
 }
