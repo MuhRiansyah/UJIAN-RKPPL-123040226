@@ -62,7 +62,7 @@ public class SoalTest extends TestCase{
     /*
      * test case 6: melakukan pengujian apakah 
      * nilai kembalian dari method perkalian sesuai 
-     * hasil perkalian yang sebenarnya atau tidak
+     * hasil perkalian yang sebenarnya 
     */       
     public void testSamePerkalian(){                
         assertSame("Seharusnya Nilainya sama",54,s.perkalian(6,9));
