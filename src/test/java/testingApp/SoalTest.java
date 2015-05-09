@@ -49,4 +49,12 @@ public class SoalTest extends TestCase{
     public void testNullFaktorial(){                
         assertNotNull("Nilainya tidak null",s.faktorial(6));
     }            
+    
+    /*
+     * test case 5: melakukan pengujian apakah 
+     * nilai kembalian dari method perkalian bernilai null atau tidak
+    */       
+    public void testNullPerkalian(){                
+        assertNull("Seharusnya Nilainya null",s.perkalian(6,9));
+    }                
 }
