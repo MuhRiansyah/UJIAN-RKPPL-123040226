@@ -5,6 +5,7 @@
 package testingApp;
 import static junit.framework.Assert.assertNotNull;
 import static junit.framework.Assert.assertNotSame;
+import static junit.framework.Assert.assertNull;
 import static junit.framework.Assert.assertSame;
 import junit.framework.Test;
 import junit.framework.TestCase;
@@ -57,4 +58,13 @@ public class SoalTest extends TestCase{
     public void testNullPerkalian(){                
         assertNull("Seharusnya Nilainya null",s.perkalian(6,9));
     }                
+    
+    /*
+     * test case 6: melakukan pengujian apakah 
+     * nilai kembalian dari method perkalian sesuai 
+     * hasil perkalian yang sebenarnya atau tidak
+    */       
+    public void testSamePerkalian(){                
+        assertSame("Seharusnya Nilainya sama",54,s.perkalian(6,9));
+    }                    
 }
