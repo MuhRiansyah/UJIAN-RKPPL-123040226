@@ -3,6 +3,7 @@
  * and open the template in the editor.
  */
 package testingApp;
+import static junit.framework.Assert.assertNotNull;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -20,4 +21,13 @@ public class SoalTest extends TestCase{
     public void testNotNullPangkat(){        
         assertNotNull("Hasilnya tidak Null",s.pangkat(10, 2));
     }
+    
+    /*
+     * test case 2: melakukan pengujian apakah 
+     * nilai kembalian dari method pangkat sesuai hasil pemangkatan 
+     * yang seharusnya
+    */       
+    public void testNullPangkat(){                
+        assertSame("Harusnya",100,s.pangkat(10,2));
+    }    
 }
